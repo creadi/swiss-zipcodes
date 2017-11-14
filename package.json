@@ -1,5 +1,5 @@
 {
-  "name": "validate-swiss-postcode",
+  "name": "swiss-zipcodes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,8 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash.filter": "^4.6.3",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0",
     "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "lodash.filter": "^4.6.0"
   }
 }
