@@ -3,7 +3,7 @@
 ## Usage
 
 ```javascript
-import { search, validate } as search from 'swiss-zipcodes'
+import { search, validate, cityFromZip } as search from 'swiss-zipcodes'
 ```
 
 ### search()
@@ -42,6 +42,27 @@ validate('4054')
 ```
 
 returns `true`
+
+### cityFromZip()
+
+Get an array of commune names from a zip code ( `number` or `string`)
+
+```javascript
+cityFromZip(4052)
+
+// or
+
+cityFromZip('4052')
+```
+
+returns
+
+```javascript
+[
+  'Basel',
+  'Münchenstein'
+]
+```
 
 ## Data
 

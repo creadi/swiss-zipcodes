@@ -109,6 +109,22 @@ test('cityFromZip(\'4054\')', t => {
   t.end()
 })
 
+test('cityFromZip(4052)', t => {
+  const res = cityFromZip(4052)
+  t.true(Array.isArray(res), 'should return an array')
+  t.same(res.length, 2, 'should be an array with 2 items')
+  t.same(typeof res.shift(), 'string', 'item should be a string')
+  t.end()
+})
+
+test('cityFromZip(\'4052\')', t => {
+  const res = cityFromZip('4052')
+  t.true(Array.isArray(res), 'should return an array')
+  t.same(res.length, 2, 'should be an array with 2 items')
+  t.same(typeof res.shift(), 'string', 'item should be a string')
+  t.end()
+})
+
 test('cityFromZip(4000)', t => {
   const res = cityFromZip(4000)
   t.true(Array.isArray(res), 'should return an array')
