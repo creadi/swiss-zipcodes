@@ -30,13 +30,6 @@ test('search({ commune: \'Basel\' })', t => {
   t.end()
 })
 
-test('search({ commune: \'basel\' })', t => {
-  const res = search({ commune: 'basel' })
-  t.true(Array.isArray(res), 'should return array')
-  t.same(res.length, 10, 'should be an array with 10 items')
-  t.end()
-})
-
 test('search({ commune: \'Xxxx\' })', t => {
   const res = search({ commune: 'Xxxx' })
   t.true(Array.isArray(res), 'should return array')
@@ -52,13 +45,6 @@ test('search({ canton: \'BS\' })', t => {
   t.true(firstItem.zip, 'first item should have zip')
   t.true(firstItem.canton, 'first item should have canton')
   t.true(firstItem.commune, 'first item should have commune')
-  t.end()
-})
-
-test('search({ canton: \'bs\' })', t => {
-  const res = search({ canton: 'bs' })
-  t.true(Array.isArray(res), 'should return array')
-  t.same(res.length, 13, 'should be an array with 13 items')
   t.end()
 })
 
