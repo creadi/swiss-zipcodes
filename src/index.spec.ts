@@ -92,3 +92,33 @@ test('validate(\'4000\')', t => {
   t.false(validate('4000'), 'should return false')
   t.end()
 })
+
+test('cityFromZip(4054)', t => {
+  const res = cityFromZip(4054)
+  t.true(Array.isArray(res), 'should return an array')
+  t.same(res.length, 1, 'should be an array with one item')
+  t.same(typeof res.shift(), 'string', 'item should be a string')
+  t.end()
+})
+
+test('cityFromZip(\'4054\')', t => {
+  const res = cityFromZip('4054')
+  t.true(Array.isArray(res), 'should return an array')
+  t.same(res.length, 1, 'should be an array with one item')
+  t.same(typeof res.shift(), 'string', 'item should be a string')
+  t.end()
+})
+
+test('cityFromZip(4000)', t => {
+  const res = cityFromZip(4000)
+  t.true(Array.isArray(res), 'should return an array')
+  t.same(res.length, 0, 'should be an empty array')
+  t.end()
+})
+
+test('cityFromZip(\'4000\')', t => {
+  const res = cityFromZip(4000)
+  t.true(Array.isArray(res), 'should return an array')
+  t.same(res.length, 0, 'should be an empty array')
+  t.end()
+})
