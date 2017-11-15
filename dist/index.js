@@ -14,3 +14,7 @@ exports.validate = (zip) => {
     }
     return false;
 };
+exports.cityFromZip = (zip) => {
+    const result = exports.search({ zip: Number(zip) });
+    return result.map(({ commune }) => commune);
+};
