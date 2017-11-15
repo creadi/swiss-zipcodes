@@ -3,15 +3,15 @@
 ## Usage
 
 ```javascript
-import { search, validate, cityFromZip } as search from 'swiss-zipcodes'
+import { search, validate, cityFromZip } from 'swiss-zipcodes'
 ```
 
 ### search()
 
 Search by any combination of:
-  * `zip` (number)
-  * `canton` (string)
-  * `commune` (string)
+  * `zip` (`number`)
+  * `canton` (`string`)
+  * `commune` (`string`)
 
 ```javascript
 search({ zip: 4054 })
@@ -31,7 +31,7 @@ returns
 
 ### validate()
 
-Validate zip code as `number` or `string`
+Validate `zip` code as `number` or `string`
 
 ```javascript
 validate(4054)
@@ -45,7 +45,7 @@ returns `true`
 
 ### cityFromZip()
 
-Get an array of commune names from a zip code ( `number` or `string`)
+Get an array of `commune` names from a zip code ( `number` or `string`)
 
 ```javascript
 cityFromZip(4052)
