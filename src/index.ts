@@ -12,3 +12,8 @@ export const validate = (zip: number | string): boolean => {
   if (result.length !== 0) { return true }
   return false
 }
+
+export const cityFromZip = (zip: number | string): Array<string> => {
+  const result = search({ zip: Number(zip) })
+  return result.map(({ commune }) => commune)
+}

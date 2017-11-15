@@ -1,5 +1,5 @@
 import * as test from 'tape'
-import { search, validate } from './index'
+import { search, validate, cityFromZip } from './index'
 
 test('search({ zip: 4054 })', t => {
   const res = search({ zip: 4054 })
