@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ts-node node_modules/tape/bin/tape src/**/*.spec.ts | tap-spec",
     "build": "tsc"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
     "@types/lodash.filter": "^4.6.3",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0",
+    "ts-node": "^3.3.0",
     "typescript": "^2.6.1"
   },
   "dependencies": {
