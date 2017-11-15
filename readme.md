@@ -3,8 +3,17 @@
 ## Usage
 
 ```javascript
-import * as search from 'swiss-zipcodes'
+import { search, validate } as search from 'swiss-zipcodes'
+```
 
+### search()
+
+Search by any combination of:
+  * `zip` (number)
+  * `canton` (string)
+  * `commune` (string)
+
+```javascript
 search({ zip: 4054 })
 ```
 
@@ -20,7 +29,19 @@ returns
 ]
 ```
 
-Search by any combination of `zip`, `canton` and `commune`
+### validate()
+
+Validate zip code as `number` or `string`
+
+```javascript
+validate(4054)
+
+// or
+
+validate('4054')
+```
+
+returns `true`
 
 ## Data
 
