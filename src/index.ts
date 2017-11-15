@@ -1,8 +1,8 @@
 import { data } from './data'
 import { filter } from 'lodash'
-import { SwissPostcodeItem, SwissPostcodeSearch } from './types'
+import { SwissZipcodeItem, SwissZipcodeSearch } from './types'
 
-export const search = (searchData: SwissPostcodeSearch): Array<SwissPostcodeItem> =>
+export const search = (searchData: SwissZipcodeSearch): Array<SwissZipcodeItem> =>
   filter(data, searchData)
 
 export const validate = (zip: number | string): boolean => {

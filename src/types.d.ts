@@ -1,10 +1,10 @@
-export interface SwissPostcodeItem {
+export interface SwissZipcodeItem {
   zip: number
   canton: string
   commune: string
 }
 
-export interface SwissPostcodeSearch {
+export interface SwissZipcodeSearch {
   zip?: number
   canton?: string
   commune?: string
