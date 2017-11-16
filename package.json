@@ -2,7 +2,7 @@
   "name": "swiss-zipcodes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "ts-node node_modules/tape/bin/tape src/**/*.spec.ts | tap-spec",
     "build": "tsc"
