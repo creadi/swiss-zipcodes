@@ -1,6 +1,16 @@
 # swiss-zipcodes
 
+## Purpose
+
+Search and validate swiss zip codes
+
 ## Usage
+
+```bash
+npm install https://github.com/creadi/swiss-zipcodes
+```
+
+and
 
 ```javascript
 import { search, validate, cityFromZip } from 'swiss-zipcodes'
