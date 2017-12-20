@@ -11,6 +11,8 @@ Search and validate swiss zip codes
 ## Usage
 
 ```bash
+npm i --save swiss-zipcodes
+# or
 npm install https://github.com/creadi/swiss-zipcodes
 ```
 
