@@ -1,3 +1,7 @@
+[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/creadi/swiss-zipcodes)
+[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/creadi/swiss-zipcodes)
+[![Build Status](https://travis-ci.org/creadi/swiss-zipcodes.svg?branch=master)](https://travis-ci.org/creadi/swiss-zipcodes)
+
 # swiss-zipcodes
 
 ## Purpose

@@ -1,7 +1,7 @@
 {
   "name": "swiss-zipcodes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Swiss zip codes",
   "main": "dist/index.js",
   "scripts": {
     "test": "ts-node node_modules/tape/bin/tape src/**/*.spec.ts | tap-spec",
