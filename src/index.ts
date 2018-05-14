@@ -7,7 +7,7 @@ export const search = (searchData: SwissZipcodeSearch): Array<SwissZipcodeItem> 
 
 export const validate = (zip: number | string): boolean => {
   const num = Number(zip)
-  if (Number.isNaN(num)) { return false }
+  if (isNaN(num)) { return false }
   const result = search({ zip: num })
   if (result.length !== 0) { return true }
   return false
