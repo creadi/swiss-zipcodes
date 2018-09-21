@@ -1,6 +1,7 @@
 import { SwissZipcodeItem } from './types'
 
 export const data: Array<SwissZipcodeItem> =[
+  { zip: 8000, canton: "ZH", commune: "Zürich" },
   { zip: 8914, canton: "ZH", commune: "Aeugst am Albis" },
   { zip: 8909, canton: "ZH", commune: "Affoltern am Albis" },
   { zip: 8910, canton: "ZH", commune: "Affoltern am Albis" },
