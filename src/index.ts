@@ -1,4 +1,4 @@
-import { data } from './data'
+import { data } from './data_bfs'
 import { filter } from 'lodash'
 import { SwissZipcodeItem, SwissZipcodeSearch } from './types'
 

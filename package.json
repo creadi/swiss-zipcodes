@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "ts-node node_modules/tape/bin/tape src/**/*.spec.ts | tap-spec",
-    "build": "tsc"
+    "build": "tsc",
+    "merge-geoname": "ts-node src/mergeGeonameData.ts"
   },
   "keywords": [
     "Swiss",
@@ -22,6 +23,8 @@
   "license": "MIT",
   "devDependencies": {
     "@types/lodash.filter": "^4.6.4",
+    "@types/node": "^10.10.1",
+    "ramda": "^0.25.0",
     "tap-spec": "^4.1.2",
     "tape": "^4.9.1",
     "ts-node": "^3.3.0",
