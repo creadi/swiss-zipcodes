@@ -86,3 +86,7 @@ returns
 Data from [Federal Statistics](https://www.bfs.admin.ch/bfs/fr/home/bases-statistiques/repertoire-officiel-communes-suisse/tableau-correspondance-regbl.assetdetail.2861277.html).
 
 Direct link to [excel sheet](https://www.bfs.admin.ch/bfsstatic/dam/assets/2861277/master).
+
+## Update 1.0.6
+
+Add data from [geonames](https://www.geonames.org/postal-codes/CH/) [extraction](https://raw.githubusercontent.com/TrustChainEG/postal-codes-json-xml-csv/master/data/CH/zipcodes.ch.json)

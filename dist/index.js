@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var data_1 = require("./data");
+var data_bfs_1 = require("./data_bfs");
 var lodash_1 = require("lodash");
 exports.search = function (searchData) {
-    return lodash_1.filter(data_1.data, searchData);
+    return lodash_1.filter(data_bfs_1.data, searchData);
 };
 exports.validate = function (zip) {
     var num = Number(zip);
