@@ -6,10 +6,10 @@ import { SwissZipcodeItem } from './types'
 declare function require(name:string)
 const geonames = require('./data_geonames.json')
 
-const geoNameToZipItem = ({ zipcode, community, state_code }: any): SwissZipcodeItem => ({
+const geoNameToZipItem = ({ zipcode, place, state_code }: any): SwissZipcodeItem => ({
   zip: Number(zipcode),
   canton: state_code,
-  commune: community,
+  commune: place,
 })
 
 const toString = ({ zip, commune, canton }: SwissZipcodeItem): string => `${zip}-${commune}-${canton}`
