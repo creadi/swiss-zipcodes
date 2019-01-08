@@ -5,11 +5,11 @@ var ramda_1 = require("ramda");
 var fs_1 = require("fs");
 var geonames = require('./data_geonames.json');
 var geoNameToZipItem = function (_a) {
-    var zipcode = _a.zipcode, community = _a.community, state_code = _a.state_code;
+    var zipcode = _a.zipcode, place = _a.place, state_code = _a.state_code;
     return ({
         zip: Number(zipcode),
         canton: state_code,
-        commune: community,
+        commune: place,
     });
 };
 var toString = function (_a) {
