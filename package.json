@@ -3,9 +3,10 @@
   "version": "1.0.8",
   "description": "Swiss zip codes",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "ts-node node_modules/tape/bin/tape src/**/*.spec.ts | tap-spec",
-    "build": "tsc",
+    "build": "tsc && cp src/types.d.ts dist/types.d.ts",
     "merge-geoname": "ts-node src/mergeGeonameData.ts"
   },
   "keywords": [
