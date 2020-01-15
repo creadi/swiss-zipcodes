@@ -23,3 +23,4 @@ exports.cityFromZip = function (zip) {
         return commune;
     });
 };
+exports.allZips = data_bfs_1.data.map(function (d) { return d.zip; });
