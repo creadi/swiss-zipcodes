@@ -17,3 +17,5 @@ export const cityFromZip = (zip: number | string): Array<string> => {
   const result = search({ zip: Number(zip) })
   return result.map(({ commune }) => commune)
 }
+
+export const allZips = data.map(d => d.zip)
