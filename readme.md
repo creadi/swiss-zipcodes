@@ -20,7 +20,7 @@ npm install https://github.com/creadi/swiss-zipcodes
 and
 
 ```javascript
-import { search, validate, cityFromZip } from 'swiss-zipcodes'
+import { search, validate, cityFromZip, allZips } from 'swiss-zipcodes'
 ```
 
 ### search()
@@ -80,6 +80,10 @@ returns
   'Münchenstein'
 ]
 ```
+
+### allZips
+
+is an array of zipcodes (`number`)
 
 ## Data
 
