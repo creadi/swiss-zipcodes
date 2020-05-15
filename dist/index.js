@@ -1,26 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var data_bfs_1 = require("./data_bfs");
-var lodash_1 = require("lodash");
-exports.search = function (searchData) {
-    return lodash_1.filter(data_bfs_1.data, searchData);
-};
-exports.validate = function (zip) {
-    var num = Number(zip);
+const data_bfs_1 = require("./data_bfs");
+const lodash_1 = require("lodash");
+exports.search = (searchData) => lodash_1.filter(data_bfs_1.data, searchData);
+exports.validate = (zip) => {
+    const num = Number(zip);
     if (isNaN(num)) {
         return false;
     }
-    var result = exports.search({ zip: num });
+    const result = exports.search({ zip: num });
     if (result.length !== 0) {
         return true;
     }
     return false;
 };
-exports.cityFromZip = function (zip) {
-    var result = exports.search({ zip: Number(zip) });
-    return result.map(function (_a) {
-        var commune = _a.commune;
-        return commune;
-    });
+exports.cityFromZip = (zip) => {
+    const result = exports.search({ zip: Number(zip) });
+    return result.map(({ commune }) => commune);
 };
-exports.allZips = data_bfs_1.data.map(function (d) { return d.zip; });
+exports.allZips = data_bfs_1.data.map(d => d.zip);
